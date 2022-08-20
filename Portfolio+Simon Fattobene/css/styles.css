@@ -1537,6 +1537,7 @@ a:active{
     color: #ff8400;
     transition: color 0.1s;
 }
+
 #nav__menu{
   background-color: transparent;
   display: grid;
