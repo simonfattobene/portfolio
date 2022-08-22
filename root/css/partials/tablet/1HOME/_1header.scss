@@ -1,0 +1,28 @@
+/* header-title "Simon Fattobene" letters group */
+#header__h1-group{
+  font-size: 8.5vw;
+  top: 2vw;
+}
+
+/* header-title.Individual letter styling */
+#header_h1-1,#header_h1-2,#header_h1-3,#header_h1-4,#header_h1-5,#header_h1-6,#header_h1-7,
+#header_h1-8,#header_h1-9,#header_h1-10,#header_h1-11,#header_h1-12,#header_h1-13,#header_h1-14{
+  top: 3.8vw;
+}@keyframes animacion {
+  from {transform: translate(0vw,7vw);}
+  to {transform: translate(0vw,0vw);}
+}
+
+/* header-blocker.Coloured plane that blocks letters on header-title startup */
+#header__title-blocker{
+top: 4.4vw;
+height: 7vw;
+}
+
+/* header-subtitle styling */
+#h1-subtitle{
+  font-size: 3.5vw;
+  width: 55vw;
+  bottom: 3vh;
+  left: 5vw;
+}

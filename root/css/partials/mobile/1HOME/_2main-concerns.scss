@@ -1,0 +1,95 @@
+@import "../../colors";
+
+/* Section 1 "Main concerns" styling */
+  #home__section1{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-areas:
+      "titles"
+      "concerns"
+      "space";
+    grid-template-rows: 1fr 4fr; 
+    padding-bottom: 25vw;
+    background: $backgroundGradient;
+  }
+  
+  /* Concerns configuring */
+  #home__section-1__titles{
+    display: flex;
+    grid-area: titles;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  /* Group of concerns div configuring */
+  #concern-div{
+    display: flex;
+    grid-area: concerns;
+    gap: 0vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .concern-image{
+    height: 18vw;
+    position: relative;
+    right: -5%;
+    filter: $concernImageInvert;
+  }
+  
+  #concern-opt{
+    margin-top: 2.5vh;
+    height: 14vw;
+    margin-bottom: 1vw;
+  }#concern-con{
+    position: relative;
+    right: -5%;
+  }#concern-acc{
+    position: relative;
+    left: 5%;
+  }
+  
+  .concern-title{
+    margin-top: 1vh;
+    color: $brightestColor;
+    font-size: 7vw;
+    position: relative;
+    right: 10%;
+  }
+  .concern-text{
+    color: $brightColor1;
+    font-size: 4vw;
+    width: 100%;
+    margin-top: 1vw;
+    grid-column: span 2;
+    text-align: center;
+  }
+  
+  #accesibility-background, #consistency-background, #optimization-background{
+    background-color: $darkestColor;
+    margin-top: 5.5vh;
+    padding: 3vh 0vw 3vh 0vw;
+    width: 80vw;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Home page concern boxes */
+  #accesibility, #consistency, #optimization{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 10%;
+    width: 80%;
+  }

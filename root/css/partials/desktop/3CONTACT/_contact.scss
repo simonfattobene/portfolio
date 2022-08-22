@@ -1,0 +1,15 @@
+
+.btn:hover {
+  background: linear-gradient(to right, $accentColor 0%, $brightestColor 50%, $accentColor 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: textShine 1s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+  to {
+    background-position: 200%;
+  }
+}

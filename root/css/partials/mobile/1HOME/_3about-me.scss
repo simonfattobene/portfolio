@@ -1,0 +1,31 @@
+@import "../../colors";
+
+/* Section 2 "About me" styling */
+  #home__section2{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr; 
+    justify-content: center;
+    background: $backgroundGradient;
+  }
+  
+  #home__section-2__titles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* About-me subtitle styling */
+  .subtitle2{
+    color: $accentColor;
+    font-size: 9.5vw;
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  #text2{
+    position: relative;
+    bottom: 0vh;
+  }

@@ -1,0 +1,33 @@
+@import "../colors";
+
+/* footer icons styling */
+  .linkedin-icon-link{
+    position: fixed;
+    bottom: 5vh;
+    left: 2.4vw;
+    width: 7vw;
+    animation-name: appear-footer;
+    animation-duration: 0.925s;
+    transition: transform 0.3s;
+    z-index: 99999;
+    user-select: none;
+    filter: $blackToBrightColor1;
+  }.mail-icon-link{
+    z-index: 99999;
+    position: fixed;
+    bottom: 12vh;
+    left: 1.5vw;
+    width: 9vw;
+    animation-name: appear-footer;
+    animation-duration: 0.7s;
+    transition: transform 0.3s;
+    user-select: none;
+    filter: $blackToBrightColor1;
+  }
+  .linkedin-icon-link:active, .mail-icon-link:active{
+    transform: rotate(-15deg);
+    filter: $blackToAccentColor;
+  }@keyframes appear-footer {
+    from {transform: translate(-15vw);}
+    to {transform: translate(0vw);}
+  }

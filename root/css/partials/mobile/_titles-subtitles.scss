@@ -1,0 +1,23 @@
+@import "../colors";
+
+  /* [global] Section-title styling */
+  .title{
+    color: $accentColor;
+    font-size: 9.5vw;
+    margin-top: 8vw;
+    text-align: center;
+  }
+  
+  /* [global] Section-subtitle styling */
+  .text-paragraph{
+    color: $brightColor1;
+    font-size: 5vw;
+    width: 80vw;
+    text-align: center;
+    margin-top: 1vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    animation-duration: 2s;
+    animation-name: projectappear;
+  }

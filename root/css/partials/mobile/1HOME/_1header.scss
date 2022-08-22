@@ -1,0 +1,116 @@
+@import "../../colors";
+
+/* hidding the obligatory h1 */
+#home-title{
+  display: none;
+}
+
+#header{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $backgroundGradient;
+}
+  
+/* header-title "Simon Fattobene" letters group */
+#header__h1-group{
+  display: flex;
+  font-size: 12vw;
+  font-family: 'Roboto', sans-serif;
+  color: $accentColor;
+  user-select: none;
+  position: relative;
+  top: 0vw;
+}
+  
+/* header-title.Space between "Simon Fattobene" */
+#header_h1-space{
+  width: 3vw;
+}
+  
+/* header-title.Individual letter styling */
+#header_h1-1,#header_h1-2,#header_h1-3,#header_h1-4,#header_h1-5,#header_h1-6,#header_h1-7,
+#header_h1-8,#header_h1-9,#header_h1-10,#header_h1-11,#header_h1-12,#header_h1-13,#header_h1-14{
+  animation-name: animacion;
+  position: relative;
+  top: 6.8vh;
+  transition: text-shadow 0.1s;
+  cursor: pointer;
+}#header_h1-1:active, #header_h1-2:active, #header_h1-3:active, #header_h1-4:active, #header_h1-5:active, #header_h1-6:active, #header_h1-7:active,
+#header_h1-8:active, #header_h1-9:active, #header_h1-10:active, #header_h1-11:active, #header_h1-12:active, #header_h1-13:active, #header_h1-14:active{
+color:$h1ActiveColor;
+text-shadow: 0vw 0vw 0.5vw $h1ActiveTextShadow;
+}
+  
+/* header-title.Individual letter animation duration */
+#header_h1-1{
+  animation-duration: 520ms;
+}#header_h1-2{
+    animation-duration: 560ms;
+}#header_h1-3{
+  animation-duration: 620ms;
+}#header_h1-4{
+  animation-duration: 700ms;
+}#header_h1-5{
+  animation-duration: 800ms;
+}#header_h1-6{
+  animation-duration: 920ms;
+}#header_h1-7{
+  animation-duration: 1060ms;
+}#header_h1-8{
+  animation-duration: 1220ms;
+}#header_h1-9{
+  animation-duration: 1400ms;
+}#header_h1-10{
+  animation-duration: 1600ms;
+}#header_h1-11{
+  animation-duration: 1820ms;
+}#header_h1-12{
+  animation-duration: 2060ms;
+}#header_h1-13{
+  animation-duration: 2320ms;
+}#header_h1-14{
+  animation-duration: 2600ms;
+}@keyframes animacion {
+  from {transform: translate(0vw,14vw);}
+  to {transform: translate(0vw,0vw);}
+}
+  
+/* header-blocker.Coloured plane that blocks letters on header-title startup */
+#header__title-blocker{
+  display: flex;
+  position: relative;
+  top: 5vh;
+  left: 0vw;
+  background: $backgroundGradient;
+  z-index: 2;
+  height: 12vh;
+  width: 100%;
+}
+  
+/* header-subtitle styling */
+#h1-subtitle{
+  font-size: 4.7vh;
+  color: $brightColor1;
+  width: 80vw;
+  display: flex;
+  justify-content: flex-end;
+  user-select: none;
+  position: relative;
+  bottom: 7vh;
+  left: 6vw;
+  z-index: 3;
+  animation-name: subtitlefadein;
+  animation-duration: 2.5s;
+  transition: transform 0.5s;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+@keyframes subtitlefadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

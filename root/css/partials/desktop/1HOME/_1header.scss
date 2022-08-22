@@ -1,0 +1,33 @@
+@import "../../colors";
+  
+  /* header-title "Simon Fattobene" letters group */
+  #header__h1-group{
+    font-size: 7.5vw;
+    top: 2vw;
+  }
+  
+  /* header-title.Individual letter styling */
+  #header_h1-1,#header_h1-2,#header_h1-3,#header_h1-4,#header_h1-5,#header_h1-6,#header_h1-7,
+  #header_h1-8,#header_h1-9,#header_h1-10,#header_h1-11,#header_h1-12,#header_h1-13,#header_h1-14{
+    top: 3.8vw;
+  }#header_h1-1:hover, #header_h1-2:hover, #header_h1-3:hover, #header_h1-4:hover, #header_h1-5:hover, #header_h1-6:hover, #header_h1-7:hover,
+  #header_h1-8:hover, #header_h1-9:hover, #header_h1-10:hover, #header_h1-11:hover, #header_h1-12:hover, #header_h1-13:hover, #header_h1-14:hover{
+  text-shadow: 0vw 0vw 0.25vw $accentColor;
+  }@keyframes animacion {
+    from {transform: translate(0vw,7vw);}
+    to {transform: translate(0vw,0vw);}
+  }
+  
+  /* header-blocker.Coloured plane that blocks letters on header-title startup */
+  #header__title-blocker{
+  top: 4.4vw;
+  height: 7vw;
+  }
+  
+  /* header-subtitle styling */
+  #h1-subtitle{
+    font-size: 3vw;
+    left: 0;
+    width: 58vw;
+    bottom: 2.6vw;
+  }

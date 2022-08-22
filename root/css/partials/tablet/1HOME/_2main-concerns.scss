@@ -1,0 +1,47 @@
+/* Section 1 "Main concerns" styling */
+#home__section1{
+  height: 100vh;
+  grid-template-rows: 1fr 1fr 2fr;
+}
+
+/* Group of concerns div configuring */
+#concern-div{
+  gap: 4vw;
+  flex-direction: row;
+  width: 70vw;
+}
+
+.concern-image{
+  height: 10vw;
+  right: 0;
+}
+
+#concern-opt{
+  height: 8vw;
+}
+
+.concern-title{
+  margin-top: 0vh;
+  font-size: 2.5vw;
+  right: 0;
+}
+.concern-text{
+  font-size: 1.65vw;
+  width: 80%;
+  margin-top: 1vw;
+}
+
+#accesibility-background, #consistency-background, #optimization-background{
+  padding: 4vh 1vw 5vh 1vw;
+  width: 27vw;
+}
+
+/* Home page concern boxes */
+#accesibility, #consistency, #optimization{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  left: 0%;
+}

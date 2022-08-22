@@ -1,0 +1,28 @@
+@import "../colors";
+  
+/*_________________________ Nav _________________________*/
+
+/* Nav styling */
+a:hover{
+  color: $brightestColor;
+  transition: color 0.2s
+}
+
+nav{
+  ul{
+    display: flex;
+    width: 70vw;
+    li{
+      padding: 5vw 3vw 1vw 3vw;
+      transition: transform 0.2s;
+      font-size: 2vw;
+      &:hover{background-color: $navLiHover;}
+      &:active{background-color: $darkColor1;}
+    }
+  }
+}
+
+/* Nav li items opening animations */
+#menu__li-home:hover, #menu__li-about:hover, #menu__li-contact:hover, #menu__li-projects:hover, #menu__li-skills:hover{
+  transform: translate(0vw,1vw);
+}

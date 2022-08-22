@@ -1,0 +1,108 @@
+@import "../../colors";
+
+#contact__unique-section{
+    height: 100vh;
+    width: 100%;
+    background: $backgroundGradient;
+    display: grid;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+  #contact-cont{
+    align-items: center;
+    justify-content: center;
+  }
+  #contact-title{
+    margin-top: 0vh;
+  }
+  
+  #titlec{
+    grid-area: titles;
+  }
+  
+  #form{
+    position: relative;
+    grid-area: form;
+    bottom: 0vh;
+  }
+  
+  /* Contact page form input configuring */
+  .inputs{
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 2.9fr;
+    gap: 1vw; 
+  }
+  
+  #subject{
+    grid-column: span 2;
+  }
+  
+  /* Contact page form text inputs styling */
+  .input{
+    color: $brightColor1;
+    background-color: $inputColor;
+    border: 0px;
+    font-size: 2.5vh;
+    font-weight: 300;
+    font-style: italic;
+    padding: 1vw 0.5vw 1vw 1vw;
+    border-radius: 10px;
+    outline: none;
+  }
+  
+  .input:focus{
+    background-color: $inputFocusColor;
+    outline: none;
+  }
+  
+  #message{
+    resize: none;
+    grid-column: span 2;
+  }
+  
+  .buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    grid-column: span 2;
+  }
+  
+  .subtitle-contact{
+    color: $brightColor1;
+    font-size: 2vw;
+    width: 80vw;
+    text-align: center;
+    margin-bottom: 0.8vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  #form-text{
+    color: $contactTextColor;
+    font-size: 2.5vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 2vw;
+    width: 50vw;
+  }
+  
+  /* Contact button configuring */
+  .btn{
+    font-size: 2.5vh;
+    cursor: pointer;
+    color: $accentColor;
+    width: 24vw;
+    margin-top: 2vw;
+    height: 6vw;
+    background-color: transparent;
+    border-color: $accentColor;
+    border-width: 0.6vw;
+    border-radius: 10px;
+  }

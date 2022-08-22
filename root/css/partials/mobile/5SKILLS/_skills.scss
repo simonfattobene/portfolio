@@ -1,0 +1,128 @@
+@import "../../colors";
+
+/* Skill page section 1 styling */
+  .skills__section1{
+    height: 100vh;
+    width: 100%;
+    background: $backgroundGradient;
+    display: grid;
+    grid-template-rows: 3fr 6fr 1fr;
+    grid-template-areas:
+    "titles"
+    "skills"
+    "nada";
+    justify-content: center;
+  }
+  
+  /* Skill page configuring */
+  
+  #skills-text{
+    grid-area: titles;
+  }
+  
+  #skill-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 80vw;
+    gap: 0vh;
+    margin-top: 7vh;
+    grid-area: skills;
+  }
+  
+  .skills{
+    width: 100%;
+    height: 7px;
+    background-color: $darkColor1;
+    margin-top: 2vh;
+    border-radius: 10px;
+  }
+  #skill1{
+    width: 80%;
+    height: 7px;
+    background-color: $accentColor;
+    z-index: 999999;
+    animation-name: skill1;
+    animation-duration: 2s;
+    border-radius: 10px;
+  }@keyframes skill1 {
+    from {
+      background-color: $brightColor1;
+      width: 0%;
+    }
+    to {
+      background-color: $accentColor;
+      width: 80%;
+    }
+  }
+  
+  #skill2{
+    width: 45%;
+    height: 7px;
+    background-color: $accentColor;
+    z-index: 999999;
+    animation-name: skill2;
+    animation-duration: 2s;
+    border-radius: 10px;
+  }@keyframes skill2 {
+    from {
+      background-color: $brightColor1;
+      width: 0%;
+    }
+    to {
+      background-color: $accentColor;
+      width: 45%;
+    }
+  }
+  
+  #skill3{
+    width: 20%;
+    height: 7px;
+    background-color: $accentColor;
+    z-index: 999999;
+    animation-name: skill3;
+    animation-duration: 2s;
+    border-radius: 10px;
+  }@keyframes skill3 {
+    from {
+      background-color: $brightColor1;
+      width: 0%;
+    }
+    to {
+      background-color: $accentColor;
+      width: 20%;
+    }
+  }
+  
+  #skill4{
+    width: 55%;
+    height: 7px;
+    background-color: $accentColor;
+    z-index: 999999;
+    animation-name: skill4;
+    animation-duration: 2s;
+    border-radius: 10px;
+  }@keyframes skill4 {
+    from {
+      background-color: $brightColor1;
+      width: 0%;
+    }
+    to {
+      background-color: $accentColor;
+      width: 55%;
+    }
+  }
+  
+  .text-skill{
+    color: $brightColor1;
+    font-size: 3.5vh;
+    width: 80vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    position: relative;
+    top: 2vh;
+  }
+  
+  #t-skill{
+    margin-top: 13vh;
+  }

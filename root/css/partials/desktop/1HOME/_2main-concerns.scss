@@ -1,0 +1,15 @@
+#home__section1{
+  grid-template-rows: 1fr 1fr 2fr;
+}
+
+/* Group of concerns div configuring */
+#concern-div{
+  width: 65vw;
+}
+
+.concern-title{
+  font-size: 1.75vw;
+}
+.concern-text{
+  font-size: 1.5vw;
+}
