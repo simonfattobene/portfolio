@@ -1,0 +1,73 @@
+@import "../colors";
+
+// _________SCROLLBAR_________
+::-webkit-scrollbar{
+  -webkit-appearance: none;
+  &:vertical{width: 11px;}
+  &:horizontal{height: 11px;}
+  &-thumb{
+    border-radius: 8px;
+    border: 2px solid $brightestColor;
+    background-color: rgba(0, 0, 0, .5);
+  }
+  &-track{
+    background-color: $brightestColor; 
+    border-radius: 8px; 
+  }
+}
+
+// _________NAV_________
+/* Nav styling */
+a:hover{
+  color: $brightestColor;
+  transition: color 0.2s
+}
+
+nav{
+  ul{
+    display: flex;
+    width: 70vw;
+    li{
+      padding: 5vw 3vw 1vw 3vw;
+      transition: transform 0.2s;
+      font-size: 2vw;
+      &:hover{background-color: $navLiHover;}
+      &:active{background-color: $darkColor1;}
+    }
+  }
+}
+
+/* Nav li items opening animations */
+#menu__li-home:hover, #menu__li-about:hover, #menu__li-contact:hover, #menu__li-projects:hover, #menu__li-skills:hover{
+  transform: translate(0vw,1vw);
+}
+
+// _________FOOTER_________
+/* footer icons styling */
+.linkedin-icon-link{
+  width: 3.3vw;
+}.mail-icon-link{
+  width: 4.1vw;
+}
+.linkedin-icon-link:hover, .mail-icon-link:hover{
+  transform: rotate(-15deg);
+  filter: $blackToBrightestColor;
+}
+
+// _________SCROLL INDICATOR_________
+/* scroll indicator arrow styling */
+#scroll-indicator-icon{
+  width: 2.8vw;
+}
+
+// _________TITLES AND SUBTITLES_________
+/* [global] Section-title styling */
+.title{
+  font-size: 5vw;
+}
+
+/* [global] Section-subtitle styling */
+.text-paragraph{
+  font-size: 2vw;
+  width: 65vw;
+}

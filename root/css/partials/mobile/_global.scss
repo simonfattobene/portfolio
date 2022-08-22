@@ -1,0 +1,136 @@
+@import "../colors";
+
+// _________NAV_________
+a:link, a:visited{
+  text-decoration: none;
+  color: $darkestColor;
+}a:active{
+  color: $accentColor;
+  transition: color 0.1s;
+}
+
+nav{
+  display: grid;
+  grid-template-rows: 40vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+  background-color: $accentColor;
+  ul{
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+    height: 40vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    right: 0vw;
+    top: 0vw;
+    z-index: 4;
+    list-style-type: none;
+    background-color: $accentColor;
+    li{
+      margin-top: 0vw;
+      text-align: center;
+      font-size: 5vh;
+      user-select: none;
+      background-color: none;
+    }
+  }
+}
+  
+#menu__li-home{
+  animation-duration: 2.275s;
+  grid-row-start: 2;
+}#menu__li-about{
+  animation-duration: 2.05s;
+  grid-row-start: 3;
+}#menu__li-contact{
+  animation-duration: 1.825s;
+  grid-row-start: 4;
+}#menu__li-projects{
+  animation-duration: 1.6s;
+  grid-row-start: 5;
+}#menu__li-skills{
+  animation-duration: 1.375s;
+  grid-row-start: 6;
+}
+
+// _________FOOTER_________
+/* footer icons styling */
+.linkedin-icon-link{
+  position: fixed;
+  bottom: 5vh;
+  left: 2.4vw;
+  width: 7vw;
+  animation-name: appear-footer;
+  animation-duration: 0.925s;
+  transition: transform 0.3s;
+  z-index: 99999;
+  user-select: none;
+  filter: $blackToBrightColor1;
+}.mail-icon-link{
+  z-index: 99999;
+  position: fixed;
+  bottom: 12vh;
+  left: 1.5vw;
+  width: 9vw;
+  animation-name: appear-footer;
+  animation-duration: 0.7s;
+  transition: transform 0.3s;
+  user-select: none;
+  filter: $blackToBrightColor1;
+}
+.linkedin-icon-link:active, .mail-icon-link:active{
+  transform: rotate(-15deg);
+  filter: $blackToAccentColor;
+}@keyframes appear-footer {
+  from {transform: translate(-15vw);}
+  to {transform: translate(0vw);}
+}
+
+// _________SCROLL INDICATOR_________
+/* scroll indicator arrow styling */
+#scroll-indicator-icon{
+  position: fixed;
+  bottom: 3.7vh;
+  right: 2.7vw;
+  transform: rotate(90deg);
+  width: 6.2vw;
+  user-select: none;
+  animation: appear-popup 4s,
+  backnforward 1s infinite;
+  filter: $blackToBrightColor1;
+  z-index: 9999;
+}@keyframes appear-popup {
+  0% {opacity: 0;}
+  75% {opacity: 0;}
+  100% {opacity: 1;}
+}@keyframes backnforward{
+  0% {transform: translate(0vw,-2vw);}
+  50% {transform: translate(0vw,-0vw);}
+  100% {transform: translate(0vw,-2vw);}
+}
+
+// _________TITLES AND SUBTITLES_________
+  /* [global] Section-title styling */
+  .title{
+    color: $accentColor;
+    font-size: 9.5vw;
+    margin-top: 8vw;
+    text-align: center;
+  }
+  
+  /* [global] Section-subtitle styling */
+  .text-paragraph{
+    color: $brightColor1;
+    font-size: 5vw;
+    width: 80vw;
+    text-align: center;
+    margin-top: 1vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    animation-duration: 2s;
+    animation-name: projectappear;
+  }

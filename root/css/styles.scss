@@ -7,10 +7,7 @@
 }
 
 /* MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE */
-@import "partials/mobile/nav";
-@import "partials/mobile/footer";
-@import "partials/mobile/titles-subtitles";
-@import "partials/mobile/scroll-indicator";
+@import "partials/mobile/global";
 @import "partials/mobile/1HOME/1header";
 @import "partials/mobile/1HOME/2main-concerns";
 @import "partials/mobile/1HOME/3about-me";
@@ -23,10 +20,7 @@
 /* TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET */
 @media screen and (min-width:600px) and (orientation:landscape) {
 
-@import "partials/tablet/nav";
-@import "partials/tablet/footer";
-@import "partials/tablet/titles-subtitles";
-@import "partials/tablet/scroll-indicator";
+@import "partials/tablet/global";
 @import "partials/tablet/1HOME/1header";
 @import "partials/tablet/1HOME/2main-concerns";
 @import "partials/tablet/1HOME/3about-me";
@@ -41,10 +35,7 @@
 /* DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP */
 @media screen and (min-width:1024px) and (orientation:landscape) {
 
-@import "partials/desktop/nav";
-@import "partials/desktop/footer";
-@import "partials/desktop/titles-subtitles";
-@import "partials/desktop/scroll-indicator";
+@import "partials/desktop/global";
 @import "partials/desktop/1HOME/1header";
 @import "partials/desktop/1HOME/2main-concerns";
 @import "partials/desktop/1HOME/3about-me";
