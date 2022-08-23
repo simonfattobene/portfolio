@@ -1,45 +1,24 @@
 @import "../../colors";
 
 #contact__unique-section{
-    height: 100vh;
-    width: 100%;
-    background: $backgroundGradient;
-    display: grid;
-    grid-template-rows: 1fr;
-    align-items: center;
-    justify-content: center;
-  }
-  #contact-cont{
-    align-items: center;
-    justify-content: center;
-  }
-  #contact-title{
-    margin-top: 0vh;
-  }
-  
-  #titlec{
-    grid-area: titles;
-  }
-  
-  #form{
-    position: relative;
-    grid-area: form;
-    bottom: 0vh;
-  }
-  
-  /* Contact page form input configuring */
-  .inputs{
-    align-items: center;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1fr 2.9fr;
-    gap: 1vw; 
-  }
-  
-  #subject{
-    grid-column: span 2;
-  }
+  height: 100%;
+  width: 100%;
+  background: $backgroundGradient;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contact-cont{
+  width: 80vw;
+}
+#contact-title{
+  margin-top: 0vh;
+}
+
+#form{
+  align-items: center;
+  justify-content: center;
+}
   
   /* Contact page form text inputs styling */
   .input{
@@ -82,15 +61,9 @@
     font-weight: 500;
     font-style: italic;
   }
-  
-  #form-text{
-    color: $contactTextColor;
-    font-size: 2.5vh;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-style: italic;
-    margin-top: 2vw;
-    width: 50vw;
+
+  #titlec{
+    text-align: center;
   }
   
   /* Contact button configuring */

@@ -4,14 +4,10 @@
   #home__section1{
     height: 100%;
     width: 100%;
-    display: grid;
+    display: flex;
     align-items: center;
     justify-content: center;
-    grid-template-areas:
-      "titles"
-      "concerns"
-      "space";
-    grid-template-rows: 1fr 4fr; 
+    flex-direction: column;
     padding-bottom: 25vw;
     background: $backgroundGradient;
   }
@@ -63,9 +59,8 @@
   }
   .concern-text{
     color: $brightColor1;
-    font-size: 4vw;
+    font-size: 4.7vw;
     width: 100%;
-    margin-top: 1vw;
     grid-column: span 2;
     text-align: center;
   }

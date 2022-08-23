@@ -8,15 +8,10 @@
 }
 @import "../../colors";
 
-.subtitle-contact{
-  width: 65vw;
+#titlec{
+  display: flex;
+  justify-content: center;
 }
-
-#form-text{
-  font-size: 1.5vw;
-  margin-top: 0;
-}
-
 /* Contact button configuring */
 .btn{
   font-size: 1.5vw;
@@ -26,4 +21,8 @@
   border-width: 0.3vw;
   border-color: $accentColor;
   color: $accentColor;
+}
+
+#contact-cont{
+  width: 70vw;
 }

@@ -23,10 +23,7 @@
 		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 			<div class="navbar-nav">
 			  <a class="nav-link" href="../index.html">Home</a>
-			  <a class="nav-link" href="about.html">About</a>
 			  <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
-			  <a class="nav-link" href="projects.html">Projects</a>
-			  <a class="nav-link" href="skills.html">Skills</a>
 			</div>
 		  </div>
 		</div>
@@ -39,18 +36,27 @@
 				<p class="text-paragraph">I'm interested in any kind of programming opportinities.</p>
 			</div>
 <!-- This is the contact form -->
-  			<form id="form" action="https://www.linkedin.com/in/simon-fattobene-11579220a/">
-				<div class="inputs">
-      				<input class="input" type="text" id="fname" name="fname" placeholder="Full Name">
-       				<input class="input" type="email" id="email" name="email" placeholder="Email">
-					<input class="input" type="text" id="subject" name="subject" placeholder="Subject">
-					<textarea class="input" rows="5" cols="50" id="message" name="message" placeholder="Message"></textarea>
-					<div class="buttons">
-						<p id="form-text">If you click the "Submit" button, the form-data will be sent to us.</p>
-						<input class="btn" type="submit" value="Submit">
-					</div>
-				</div>
-  	 		</form> 
+			<form class="row" id="form">
+				<div class="col">
+					<label for="exampleFormControlInput1" class="form-label">Email address</label>
+					<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  				</div>
+				  <div class="col">
+					<label for="exampleFormControlInput1" class="form-label">Full name</label>
+					<input type="text" class="form-control" id="exampleFormControlInput1">
+  				</div>
+				  <div class="mb-3">
+					<label for="exampleFormControlInput1" class="form-label">Subject</label>
+					<input type="text" class="form-control" id="exampleFormControlInput1">
+  				</div>
+  				<div class="mb-3">
+					<label for="exampleFormControlTextarea1" class="form-label">Message</label>
+					<textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+  				</div>
+			  	<div class="col-auto">
+					<button type="submit" class="btn btn-primary mb-3">Submit</button>
+			  	</div>
+			</form>
 		</div>
 	</section>
 <!-- This is the footer -->
