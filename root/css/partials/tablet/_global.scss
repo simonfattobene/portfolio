@@ -16,56 +16,6 @@
   }
 }
 
-// _________NAV_________
-/* Nav styling */
-a:link, a:visited{
-  color: $brightColor1;
-}a:active{
-color: $accentColor;
-}
-
-nav{
-position: fixed;
-grid-template-rows: 10vh;
-height: 10vw;
-background-color: transparent;
-ul{
-  display: flex;
-  height: 10vw;
-  width: 80vw;
-  justify-content: space-evenly;
-  background-color: transparent;
-  li{
-    margin-top: -4vw;
-    padding: 5vw 3vw 1.5vw 3vw;
-    border-radius: 15px;
-    transition: transform 0.2s;
-    font-size: 2.6vw;
-    background-color: $darkColor1;
-    &:active{background-color: $darkColor1;}
-  }
-}
-}
-
-
-/* Nav li items opening animations */
-@keyframes appear {
-from {transform: translate(0vw, -12vw);}
-to {transform: translate(0vw);}
-}#menu__li-home, #menu__li-about, #menu__li-contact, #menu__li-projects, #menu__li-skills{
-animation-name: appear;
-}#menu__li-home{
-animation-duration: 2.275s;
-}#menu__li-about{
-animation-duration: 2.05s;
-}#menu__li-contact{
-animation-duration: 1.825s;
-}#menu__li-projects{
-animation-duration: 1.6s;
-}#menu__li-skills{
-animation-duration: 1.375s;
-}
-
 // _________FOOTER_________
 /* footer icons styling */
 .linkedin-icon-link{

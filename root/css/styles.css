@@ -7,79 +7,6 @@
 }
 
 /* MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE */
-a:link, a:visited {
-  text-decoration: none;
-  color: rgb(13, 13, 13);
-}
-
-a:active {
-  color: #ff8400;
-  transition: color 0.1s;
-}
-
-nav {
-  display: grid;
-  grid-template-rows: 40vh;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  z-index: 4;
-  background-color: #ff8400;
-}
-nav ul {
-  display: grid;
-  grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
-  height: 40vh;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  right: 0vw;
-  top: 0vw;
-  z-index: 4;
-  list-style-type: none;
-  background-color: #ff8400;
-}
-nav ul li {
-  margin-top: 0vw;
-  text-align: center;
-  font-size: 5vh;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  background-color: none;
-}
-
-#menu__li-home {
-  -webkit-animation-duration: 2.275s;
-          animation-duration: 2.275s;
-  grid-row-start: 2;
-}
-
-#menu__li-about {
-  -webkit-animation-duration: 2.05s;
-          animation-duration: 2.05s;
-  grid-row-start: 3;
-}
-
-#menu__li-contact {
-  -webkit-animation-duration: 1.825s;
-          animation-duration: 1.825s;
-  grid-row-start: 4;
-}
-
-#menu__li-projects {
-  -webkit-animation-duration: 1.6s;
-          animation-duration: 1.6s;
-  grid-row-start: 5;
-}
-
-#menu__li-skills {
-  -webkit-animation-duration: 1.375s;
-          animation-duration: 1.375s;
-  grid-row-start: 6;
-}
-
 /* footer icons styling */
 .linkedin-icon-link {
   position: fixed;
@@ -967,78 +894,6 @@ nav ul li {
     background-color: #ffffff;
     border-radius: 8px;
   }
-  /* Nav styling */
-  a:link, a:visited {
-    color: rgb(218, 218, 218);
-  }
-  a:active {
-    color: #ff8400;
-  }
-  nav {
-    position: fixed;
-    grid-template-rows: 10vh;
-    height: 10vw;
-    background-color: transparent;
-  }
-  nav ul {
-    display: flex;
-    height: 10vw;
-    width: 80vw;
-    justify-content: space-evenly;
-    background-color: transparent;
-  }
-  nav ul li {
-    margin-top: -4vw;
-    padding: 5vw 3vw 1.5vw 3vw;
-    border-radius: 15px;
-    transition: transform 0.2s;
-    font-size: 2.6vw;
-    background-color: rgb(45, 45, 45);
-  }
-  nav ul li:active {
-    background-color: rgb(45, 45, 45);
-  }
-  /* Nav li items opening animations */
-  @-webkit-keyframes appear {
-    from {
-      transform: translate(0vw, -12vw);
-    }
-    to {
-      transform: translate(0vw);
-    }
-  }
-  @keyframes appear {
-    from {
-      transform: translate(0vw, -12vw);
-    }
-    to {
-      transform: translate(0vw);
-    }
-  }
-  #menu__li-home, #menu__li-about, #menu__li-contact, #menu__li-projects, #menu__li-skills {
-    -webkit-animation-name: appear;
-            animation-name: appear;
-  }
-  #menu__li-home {
-    -webkit-animation-duration: 2.275s;
-            animation-duration: 2.275s;
-  }
-  #menu__li-about {
-    -webkit-animation-duration: 2.05s;
-            animation-duration: 2.05s;
-  }
-  #menu__li-contact {
-    -webkit-animation-duration: 1.825s;
-            animation-duration: 1.825s;
-  }
-  #menu__li-projects {
-    -webkit-animation-duration: 1.6s;
-            animation-duration: 1.6s;
-  }
-  #menu__li-skills {
-    -webkit-animation-duration: 1.375s;
-            animation-duration: 1.375s;
-  }
   /* footer icons styling */
   .linkedin-icon-link {
     width: 5vw;
@@ -1168,6 +1023,8 @@ nav ul li {
     height: 3vw;
     margin-top: 0;
     border-width: 0.3vw;
+    border-color: #ff8400;
+    color: #ff8400;
   }
   /* Projects page section configuring */
   #projects__unique-section {
@@ -1226,30 +1083,6 @@ nav ul li {
   ::-webkit-scrollbar-track {
     background-color: #ffffff;
     border-radius: 8px;
-  }
-  /* Nav styling */
-  a:hover {
-    color: #ffffff;
-    transition: color 0.2s;
-  }
-  nav ul {
-    display: flex;
-    width: 70vw;
-  }
-  nav ul li {
-    padding: 5vw 3vw 1vw 3vw;
-    transition: transform 0.2s;
-    font-size: 2vw;
-  }
-  nav ul li:hover {
-    background-color: rgb(70, 70, 70);
-  }
-  nav ul li:active {
-    background-color: rgb(45, 45, 45);
-  }
-  /* Nav li items opening animations */
-  #menu__li-home:hover, #menu__li-about:hover, #menu__li-contact:hover, #menu__li-projects:hover, #menu__li-skills:hover {
-    transform: translate(0vw, 1vw);
   }
   /* footer icons styling */
   .linkedin-icon-link {
