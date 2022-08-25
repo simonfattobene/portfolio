@@ -11,10 +11,7 @@
 @import "partials/mobile/1HOME/1header";
 @import "partials/mobile/1HOME/2main-concerns";
 @import "partials/mobile/1HOME/3about-me";
-@import "partials/mobile/2ABOUT/about";
 @import "partials/mobile/3CONTACT/contact";
-@import "partials/mobile/4PROJECTS/projects";
-@import "partials/mobile/5SKILLS/skills";
 /* MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE */
 
 /* TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET */
@@ -24,10 +21,7 @@
 @import "partials/tablet/1HOME/1header";
 @import "partials/tablet/1HOME/2main-concerns";
 @import "partials/tablet/1HOME/3about-me";
-@import "partials/tablet/2ABOUT/about";
 @import "partials/tablet/3CONTACT/contact";
-@import "partials/tablet/4PROJECTS/projects";
-@import "partials/tablet/5SKILLS/skills";
 
 }
 /* TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET */ 
@@ -35,14 +29,11 @@
 /* DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP */
 @media screen and (min-width:1024px) and (orientation:landscape) {
 
-@import "partials/desktop/globalgitc";
+@import "partials/desktop/global";
 @import "partials/desktop/1HOME/1header";
 @import "partials/desktop/1HOME/2main-concerns";
 @import "partials/desktop/1HOME/3about-me";
-@import "partials/desktop/2ABOUT/about";
 @import "partials/desktop/3CONTACT/contact";
-@import "partials/desktop/4PROJECTS/projects";
-@import "partials/desktop/5SKILLS/skills";
 
 }
 /* DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP */

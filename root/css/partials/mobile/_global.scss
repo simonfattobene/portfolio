@@ -1,61 +1,5 @@
 @import "../colors";
 
-// _________NAV_________
-a:link, a:visited{
-  text-decoration: none;
-  color: $darkestColor;
-}a:active{
-  color: $accentColor;
-  transition: color 0.1s;
-}
-
-nav{
-  display: grid;
-  grid-template-rows: 40vh;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  z-index: 4;
-  background-color: $accentColor;
-  ul{
-    display: grid;
-    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
-    height: 40vh;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    right: 0vw;
-    top: 0vw;
-    z-index: 4;
-    list-style-type: none;
-    background-color: $accentColor;
-    li{
-      margin-top: 0vw;
-      text-align: center;
-      font-size: 5vh;
-      user-select: none;
-      background-color: none;
-    }
-  }
-}
-  
-#menu__li-home{
-  animation-duration: 2.275s;
-  grid-row-start: 2;
-}#menu__li-about{
-  animation-duration: 2.05s;
-  grid-row-start: 3;
-}#menu__li-contact{
-  animation-duration: 1.825s;
-  grid-row-start: 4;
-}#menu__li-projects{
-  animation-duration: 1.6s;
-  grid-row-start: 5;
-}#menu__li-skills{
-  animation-duration: 1.375s;
-  grid-row-start: 6;
-}
-
 // _________FOOTER_________
 /* footer icons styling */
 .linkedin-icon-link{
@@ -134,3 +78,7 @@ nav{
     animation-duration: 2s;
     animation-name: projectappear;
   }
+
+label {
+  color: $brightColor1;
+}

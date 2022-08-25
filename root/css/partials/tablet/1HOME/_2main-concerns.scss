@@ -6,34 +6,33 @@
 
 /* Group of concerns div configuring */
 #concern-div{
-  gap: 4vw;
   flex-direction: row;
   width: 70vw;
 }
 
 .concern-image{
-  height: 10vw;
+  height: 15vw;
   right: 0;
 }
 
 #concern-opt{
-  height: 8vw;
+  height: 12vw;
 }
 
 .concern-title{
   margin-top: 0vh;
-  font-size: 2.5vw;
+  font-size: 4vw;
   right: 0;
 }
 .concern-text{
-  font-size: 1.65vw;
+  font-size: 2.5vw;
   width: 80%;
   margin-top: 1vw;
 }
 
 #accesibility-background, #consistency-background, #optimization-background{
   padding: 4vh 1vw 5vh 1vw;
-  width: 27vw;
+  width: 65vw;
 }
 
 /* Home page concern boxes */

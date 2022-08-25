@@ -1,3 +1,4 @@
+@import "../../colors";
 
 .btn:hover {
   background: linear-gradient(to right, $accentColor 0%, $brightestColor 50%, $accentColor 100%);
@@ -12,4 +13,8 @@
   to {
     background-position: 200%;
   }
+}
+
+#contact-cont{
+  width: 65vw;
 }

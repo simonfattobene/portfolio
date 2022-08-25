@@ -7,79 +7,6 @@
 }
 
 /* MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE */
-a:link, a:visited {
-  text-decoration: none;
-  color: rgb(13, 13, 13);
-}
-
-a:active {
-  color: #ff8400;
-  transition: color 0.1s;
-}
-
-nav {
-  display: grid;
-  grid-template-rows: 40vh;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  z-index: 4;
-  background-color: #ff8400;
-}
-nav ul {
-  display: grid;
-  grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
-  height: 40vh;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  right: 0vw;
-  top: 0vw;
-  z-index: 4;
-  list-style-type: none;
-  background-color: #ff8400;
-}
-nav ul li {
-  margin-top: 0vw;
-  text-align: center;
-  font-size: 5vh;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  background-color: none;
-}
-
-#menu__li-home {
-  -webkit-animation-duration: 2.275s;
-          animation-duration: 2.275s;
-  grid-row-start: 2;
-}
-
-#menu__li-about {
-  -webkit-animation-duration: 2.05s;
-          animation-duration: 2.05s;
-  grid-row-start: 3;
-}
-
-#menu__li-contact {
-  -webkit-animation-duration: 1.825s;
-          animation-duration: 1.825s;
-  grid-row-start: 4;
-}
-
-#menu__li-projects {
-  -webkit-animation-duration: 1.6s;
-          animation-duration: 1.6s;
-  grid-row-start: 5;
-}
-
-#menu__li-skills {
-  -webkit-animation-duration: 1.375s;
-          animation-duration: 1.375s;
-  grid-row-start: 6;
-}
-
 /* footer icons styling */
 .linkedin-icon-link {
   position: fixed;
@@ -223,6 +150,10 @@ nav ul li {
           animation-duration: 2s;
   -webkit-animation-name: projectappear;
           animation-name: projectappear;
+}
+
+label {
+  color: rgb(218, 218, 218);
 }
 
 /* hidding the obligatory h1 */
@@ -422,11 +353,10 @@ nav ul li {
 #home__section1 {
   height: 100%;
   width: 100%;
-  display: grid;
+  display: flex;
   align-items: center;
   justify-content: center;
-  grid-template-areas: "titles" "concerns" "space";
-  grid-template-rows: 1fr 4fr;
+  flex-direction: column;
   padding-bottom: 25vw;
   background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
 }
@@ -483,9 +413,8 @@ nav ul li {
 
 .concern-text {
   color: rgb(218, 218, 218);
-  font-size: 4vw;
+  font-size: 4.7vw;
   width: 100%;
-  margin-top: 1vw;
   grid-column: span 2;
   text-align: center;
 }
@@ -544,64 +473,26 @@ nav ul li {
   bottom: 0vh;
 }
 
-/* About page unique section configuring */
-.about__section1 {
-  height: 100%;
-  background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
-  display: grid;
-  grid-template-rows: 1fr;
-  justify-content: center;
-}
-
-#texta {
-  margin-bottom: 16vh;
-}
-
-#about-title {
-  margin-top: 16vh;
-}
-
 #contact__unique-section {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
-  display: grid;
-  grid-template-rows: 1fr;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
 #contact-cont {
-  align-items: center;
-  justify-content: center;
+  width: 80vw;
 }
 
 #contact-title {
   margin-top: 0vh;
 }
 
-#titlec {
-  grid-area: titles;
-}
-
 #form {
-  position: relative;
-  grid-area: form;
-  bottom: 0vh;
-}
-
-/* Contact page form input configuring */
-.inputs {
   align-items: center;
   justify-content: center;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 1fr 1fr 2.9fr;
-  gap: 1vw;
-}
-
-#subject {
-  grid-column: span 2;
 }
 
 /* Contact page form text inputs styling */
@@ -646,14 +537,8 @@ nav ul li {
   font-style: italic;
 }
 
-#form-text {
-  color: rgb(113, 113, 113);
-  font-size: 2.5vh;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-  margin-top: 2vw;
-  width: 50vw;
+#titlec {
+  text-align: center;
 }
 
 /* Contact button configuring */
@@ -668,282 +553,6 @@ nav ul li {
   border-color: #ff8400;
   border-width: 0.6vw;
   border-radius: 10px;
-}
-
-/* Projects page section configuring */
-#projects__unique-section {
-  height: 100%;
-  background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
-  display: grid;
-  grid-template-rows: 1fr;
-  align-items: center;
-  justify-content: center;
-  padding-top: 10vh;
-}
-
-/* Projects page configuring */
-.img-container {
-  margin-top: 1vw;
-  width: 80vw;
-  height: 100%;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "project-bbig" "project-cocinarte";
-  align-items: center;
-  gap: 6vh;
-}
-
-.img-project {
-  width: 35vw;
-  border-radius: 100%;
-  margin-top: 0vw;
-  background-color: rgb(13, 13, 13);
-  padding: 1.5vw;
-  position: relative;
-  bottom: 12vw;
-  -webkit-animation-name: projectappear;
-          animation-name: projectappear;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-}
-
-.cont {
-  background-color: rgb(13, 13, 13);
-  border-radius: 7vw;
-  width: 80vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 10vw;
-}
-
-#project-bbig {
-  grid-area: project-bbig;
-}
-
-#project-cocinarte {
-  grid-area: project-cocinarte;
-}
-
-.project-text {
-  color: rgb(218, 218, 218);
-  font-size: 4vh;
-  width: 70vw;
-  text-align: center;
-  position: relative;
-  top: -11vw;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-  -webkit-animation-name: projectappear;
-          animation-name: projectappear;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-}
-
-@-webkit-keyframes projectappear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes projectappear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.link-bbig:link {
-  color: #ff8400;
-}
-
-.link-bbig:visited {
-  color: #ff8400;
-}
-
-/* Skill page section 1 styling */
-.skills__section1 {
-  height: 100vh;
-  width: 100%;
-  background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
-  display: grid;
-  grid-template-rows: 3fr 6fr 1fr;
-  grid-template-areas: "titles" "skills" "nada";
-  justify-content: center;
-}
-
-/* Skill page configuring */
-#skills-text {
-  grid-area: titles;
-}
-
-#skill-container {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  width: 80vw;
-  gap: 0vh;
-  margin-top: 7vh;
-  grid-area: skills;
-}
-
-.skills {
-  width: 100%;
-  height: 7px;
-  background-color: rgb(45, 45, 45);
-  margin-top: 2vh;
-  border-radius: 10px;
-}
-
-#skill1 {
-  width: 80%;
-  height: 7px;
-  background-color: #ff8400;
-  z-index: 999999;
-  -webkit-animation-name: skill1;
-          animation-name: skill1;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  border-radius: 10px;
-}
-
-@-webkit-keyframes skill1 {
-  from {
-    background-color: rgb(218, 218, 218);
-    width: 0%;
-  }
-  to {
-    background-color: #ff8400;
-    width: 80%;
-  }
-}
-
-@keyframes skill1 {
-  from {
-    background-color: rgb(218, 218, 218);
-    width: 0%;
-  }
-  to {
-    background-color: #ff8400;
-    width: 80%;
-  }
-}
-#skill2 {
-  width: 45%;
-  height: 7px;
-  background-color: #ff8400;
-  z-index: 999999;
-  -webkit-animation-name: skill2;
-          animation-name: skill2;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  border-radius: 10px;
-}
-
-@-webkit-keyframes skill2 {
-  from {
-    background-color: rgb(218, 218, 218);
-    width: 0%;
-  }
-  to {
-    background-color: #ff8400;
-    width: 45%;
-  }
-}
-
-@keyframes skill2 {
-  from {
-    background-color: rgb(218, 218, 218);
-    width: 0%;
-  }
-  to {
-    background-color: #ff8400;
-    width: 45%;
-  }
-}
-#skill3 {
-  width: 20%;
-  height: 7px;
-  background-color: #ff8400;
-  z-index: 999999;
-  -webkit-animation-name: skill3;
-          animation-name: skill3;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  border-radius: 10px;
-}
-
-@-webkit-keyframes skill3 {
-  from {
-    background-color: rgb(218, 218, 218);
-    width: 0%;
-  }
-  to {
-    background-color: #ff8400;
-    width: 20%;
-  }
-}
-
-@keyframes skill3 {
-  from {
-    background-color: rgb(218, 218, 218);
-    width: 0%;
-  }
-  to {
-    background-color: #ff8400;
-    width: 20%;
-  }
-}
-#skill4 {
-  width: 55%;
-  height: 7px;
-  background-color: #ff8400;
-  z-index: 999999;
-  -webkit-animation-name: skill4;
-          animation-name: skill4;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  border-radius: 10px;
-}
-
-@-webkit-keyframes skill4 {
-  from {
-    background-color: rgb(218, 218, 218);
-    width: 0%;
-  }
-  to {
-    background-color: #ff8400;
-    width: 55%;
-  }
-}
-
-@keyframes skill4 {
-  from {
-    background-color: rgb(218, 218, 218);
-    width: 0%;
-  }
-  to {
-    background-color: #ff8400;
-    width: 55%;
-  }
-}
-.text-skill {
-  color: rgb(218, 218, 218);
-  font-size: 3.5vh;
-  width: 80vw;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-  position: relative;
-  top: 2vh;
-}
-
-#t-skill {
-  margin-top: 13vh;
 }
 
 /* MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE */
@@ -966,78 +575,6 @@ nav ul li {
   ::-webkit-scrollbar-track {
     background-color: #ffffff;
     border-radius: 8px;
-  }
-  /* Nav styling */
-  a:link, a:visited {
-    color: rgb(218, 218, 218);
-  }
-  a:active {
-    color: #ff8400;
-  }
-  nav {
-    position: fixed;
-    grid-template-rows: 10vh;
-    height: 10vw;
-    background-color: transparent;
-  }
-  nav ul {
-    display: flex;
-    height: 10vw;
-    width: 80vw;
-    justify-content: space-evenly;
-    background-color: transparent;
-  }
-  nav ul li {
-    margin-top: -4vw;
-    padding: 5vw 3vw 1.5vw 3vw;
-    border-radius: 15px;
-    transition: transform 0.2s;
-    font-size: 2.6vw;
-    background-color: rgb(45, 45, 45);
-  }
-  nav ul li:active {
-    background-color: rgb(45, 45, 45);
-  }
-  /* Nav li items opening animations */
-  @-webkit-keyframes appear {
-    from {
-      transform: translate(0vw, -12vw);
-    }
-    to {
-      transform: translate(0vw);
-    }
-  }
-  @keyframes appear {
-    from {
-      transform: translate(0vw, -12vw);
-    }
-    to {
-      transform: translate(0vw);
-    }
-  }
-  #menu__li-home, #menu__li-about, #menu__li-contact, #menu__li-projects, #menu__li-skills {
-    -webkit-animation-name: appear;
-            animation-name: appear;
-  }
-  #menu__li-home {
-    -webkit-animation-duration: 2.275s;
-            animation-duration: 2.275s;
-  }
-  #menu__li-about {
-    -webkit-animation-duration: 2.05s;
-            animation-duration: 2.05s;
-  }
-  #menu__li-contact {
-    -webkit-animation-duration: 1.825s;
-            animation-duration: 1.825s;
-  }
-  #menu__li-projects {
-    -webkit-animation-duration: 1.6s;
-            animation-duration: 1.6s;
-  }
-  #menu__li-skills {
-    -webkit-animation-duration: 1.375s;
-            animation-duration: 1.375s;
   }
   /* footer icons styling */
   .linkedin-icon-link {
@@ -1106,30 +643,29 @@ nav ul li {
   }
   /* Group of concerns div configuring */
   #concern-div {
-    gap: 4vw;
     flex-direction: row;
     width: 70vw;
   }
   .concern-image {
-    height: 10vw;
+    height: 15vw;
     right: 0;
   }
   #concern-opt {
-    height: 8vw;
+    height: 12vw;
   }
   .concern-title {
     margin-top: 0vh;
-    font-size: 2.5vw;
+    font-size: 4vw;
     right: 0;
   }
   .concern-text {
-    font-size: 1.65vw;
+    font-size: 2.5vw;
     width: 80%;
     margin-top: 1vw;
   }
   #accesibility-background, #consistency-background, #optimization-background {
     padding: 4vh 1vw 5vh 1vw;
-    width: 27vw;
+    width: 65vw;
   }
   /* Home page concern boxes */
   #accesibility, #consistency, #optimization {
@@ -1144,9 +680,6 @@ nav ul li {
   .subtitle2 {
     font-size: 6.5vw;
   }
-  #texta {
-    margin-bottom: 12vh;
-  }
   #contact-title {
     margin-top: 8vh;
   }
@@ -1154,12 +687,9 @@ nav ul li {
   .input {
     font-size: 1.5vw;
   }
-  .subtitle-contact {
-    width: 65vw;
-  }
-  #form-text {
-    font-size: 1.5vw;
-    margin-top: 0;
+  #titlec {
+    display: flex;
+    justify-content: center;
   }
   /* Contact button configuring */
   .btn {
@@ -1168,42 +698,11 @@ nav ul li {
     height: 3vw;
     margin-top: 0;
     border-width: 0.3vw;
+    border-color: #ff8400;
+    color: #ff8400;
   }
-  /* Projects page section configuring */
-  #projects__unique-section {
-    padding-bottom: 30vh;
-  }
-  /* Projects page configuring */
-  .img-container {
+  #contact-cont {
     width: 70vw;
-    row-gap: 20vh;
-  }
-  .img-project {
-    width: 25vw;
-  }
-  .cont {
-    width: 70vw;
-    height: 100%;
-    margin-top: 25vw;
-  }
-  .project-text {
-    font-size: 3vw;
-    width: 60vw;
-  }
-  #skill-container {
-    gap: 1vh;
-    margin-top: 5vh;
-  }
-  .text-skill {
-    font-size: 1.5vw;
-    width: 70vw;
-  }
-  #text-s {
-    grid-row-start: auto;
-    width: 100%;
-  }
-  #t-skill {
-    margin-top: 16vh;
   }
 }
 /* TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET */
@@ -1226,30 +725,6 @@ nav ul li {
   ::-webkit-scrollbar-track {
     background-color: #ffffff;
     border-radius: 8px;
-  }
-  /* Nav styling */
-  a:hover {
-    color: #ffffff;
-    transition: color 0.2s;
-  }
-  nav ul {
-    display: flex;
-    width: 70vw;
-  }
-  nav ul li {
-    padding: 5vw 3vw 1vw 3vw;
-    transition: transform 0.2s;
-    font-size: 2vw;
-  }
-  nav ul li:hover {
-    background-color: rgb(70, 70, 70);
-  }
-  nav ul li:active {
-    background-color: rgb(45, 45, 45);
-  }
-  /* Nav li items opening animations */
-  #menu__li-home:hover, #menu__li-about:hover, #menu__li-contact:hover, #menu__li-projects:hover, #menu__li-skills:hover {
-    transform: translate(0vw, 1vw);
   }
   /* footer icons styling */
   .linkedin-icon-link {
@@ -1353,34 +828,7 @@ nav ul li {
       background-position: 200%;
     }
   }
-  /* Projects page configuring */
-  .img-container {
-    width: 65vw;
-    row-gap: 0;
-  }
-  .img-project {
-    width: 17vw;
-    margin-top: 5vw;
-  }
-  .cont {
-    width: 65vw;
-    height: 120vh;
-    margin-top: 10vw;
-  }
-  .project-text {
-    font-size: 2vw;
-    width: 56vw;
-  }
-  .link-bbig:hover {
-    background: linear-gradient(to right, #ff8400 0%, #ffffff 50%, #ff8400 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200% auto;
-    -webkit-animation: textShine 1s ease-in-out infinite alternate;
-            animation: textShine 1s ease-in-out infinite alternate;
-  }
-  .text-skill {
+  #contact-cont {
     width: 65vw;
   }
 }
