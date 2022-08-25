@@ -4,8 +4,7 @@
   .about__section1{
     height: 100%;
     background: $backgroundGradient;
-    display: grid;
-    grid-template-rows: 1fr;
+    display: flex;
     justify-content: center;
   }
   
