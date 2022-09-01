@@ -1,9 +1,9 @@
 @import "../../colors";
+@import "../../extends";
 
 /* Section 2 "About me" styling */
   #home__section2{
-    height: 100vh;
-    width: 100%;
+    @extend %hw100;
     display: flex;
     justify-content: center;
     background: $backgroundGradient;
@@ -12,8 +12,7 @@
   #home__section-2__titles{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend %center;
   }
   
   /* About-me subtitle styling */

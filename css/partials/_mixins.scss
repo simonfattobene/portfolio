@@ -1,0 +1,6 @@
+@import "colors";
+
+@mixin flexGradient($backgroundGradient, $display:flex) {
+  background: $backgroundGradient;
+  display: $display;
+}

@@ -1,12 +1,12 @@
 @import "../../colors";
+@import "../../extends";
+@import "../../mixins";
 
 /* Section 1 "Main concerns" styling */
   #home__section1{
-    height: 100%;
-    width: 100%;
+    @extend %hw100;
     display: grid;
-    align-items: center;
-    justify-content: center;
+    @extend %center;
     grid-template-areas:
       "titles"
       "concerns"
@@ -30,8 +30,7 @@
     grid-area: concerns;
     gap: 0vw;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @extend %center;
     width: 100%;
   }
   
@@ -76,19 +75,15 @@
     padding: 3vh 0vw 3vh 0vw;
     width: 80vw;
     border-radius: 20px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    @extend %center;
   }
   
   /* Home page concern boxes */
   #accesibility, #consistency, #optimization{
-    text-align: center;
+    @extend %center;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
     position: relative;
     left: 10%;
     width: 80%;

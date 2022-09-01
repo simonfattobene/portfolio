@@ -1,9 +1,9 @@
 @import "../../colors";
+@import "../../extends";
 
 /* Skill page section 1 styling */
   .skills__section1{
-    height: 100vh;
-    width: 100%;
+    @extend %hw100;
     background: $backgroundGradient;
     display: grid;
     grid-template-rows: 3fr 6fr 1fr;
@@ -56,13 +56,9 @@
   }
   
   #skill2{
+    @extend #skill1;
     width: 45%;
-    height: 7px;
-    background-color: $accentColor;
-    z-index: 999999;
     animation-name: skill2;
-    animation-duration: 2s;
-    border-radius: 10px;
   }@keyframes skill2 {
     from {
       background-color: $brightColor1;
@@ -75,13 +71,9 @@
   }
   
   #skill3{
+    @extend #skill1;
     width: 20%;
-    height: 7px;
-    background-color: $accentColor;
-    z-index: 999999;
     animation-name: skill3;
-    animation-duration: 2s;
-    border-radius: 10px;
   }@keyframes skill3 {
     from {
       background-color: $brightColor1;
@@ -94,13 +86,9 @@
   }
   
   #skill4{
+    @extend #skill1;
     width: 55%;
-    height: 7px;
-    background-color: $accentColor;
-    z-index: 999999;
     animation-name: skill4;
-    animation-duration: 2s;
-    border-radius: 10px;
   }@keyframes skill4 {
     from {
       background-color: $brightColor1;
@@ -116,9 +104,7 @@
     color: $brightColor1;
     font-size: 3.5vh;
     width: 80vw;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-style: italic;
+    @extend %roboto500i;
     position: relative;
     top: 2vh;
   }
