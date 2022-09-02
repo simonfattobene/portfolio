@@ -824,6 +824,8 @@ nav, #header, #home__section1, #concern-div, #accesibility-background, #consiste
 
 #projects-text {
   width: 80vw;
+  position: relative;
+  bottom: 8vh;
 }
 
 /* Projects page configuring */
@@ -878,7 +880,7 @@ nav, #header, #home__section1, #concern-div, #accesibility-background, #consiste
 
 .project-text {
   color: rgb(218, 218, 218);
-  font-size: 4vh;
+  font-size: 5vw;
   width: 70vw;
   text-align: center;
   position: relative;
@@ -1332,6 +1334,7 @@ nav, #header, #home__section1, #concern-div, #accesibility-background, #consiste
   }
   #projects-text {
     width: 70vw;
+    bottom: 10vh;
   }
   .cont {
     width: 70vw;
@@ -1670,6 +1673,7 @@ nav, #header, #home__section1, #concern-div, #accesibility-background, #consiste
   }
   #projects-text {
     width: 65vw;
+    bottom: 10vh;
   }
   .cont {
     width: 65vw;
