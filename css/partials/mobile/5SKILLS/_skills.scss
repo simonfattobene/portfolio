@@ -1,17 +1,17 @@
 @import "../../colors";
 @import "../../extends";
+@import "../../mixins";
+@import "../../maps";
 
 /* Skill page section 1 styling */
   .skills__section1{
-    @extend %hw100;
-    background: $backgroundGradient;
-    display: grid;
+    @extend %gridHB100;
     grid-template-rows: 3fr 6fr 1fr;
     grid-template-areas:
     "titles"
     "skills"
     "nada";
-    justify-content: center;
+    justify-content: map-get($mapEstilo, just-center);
   }
   
   /* Skill page configuring */

@@ -1,3 +1,7 @@
+@import "../../colors";
+@import "../../extends";
+@import "../../mixins";
+@import "../../maps";
 
 .btn:hover {
   background: linear-gradient(to right, $accentColor 0%, $brightestColor 50%, $accentColor 100%);

@@ -7,6 +7,32 @@
 }
 
 /* MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE */
+.inputs, #contact-cont, #contact__unique-section, #home__section-2__titles, #accesibility, #consistency, #optimization, #accesibility-background, #consistency-background, #optimization-background, #concern-div, #home__section1, #header, nav {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact__unique-section, #home__section2, #header {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
+  display: flex;
+}
+
+.skills__section1 {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
+  display: grid;
+}
+
+.text-skill, .project-text, #form-text, .subtitle-contact, #h1-subtitle, .text-paragraph {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
 a:link, a:visited {
   text-decoration: none;
   color: rgb(13, 13, 13);
@@ -18,26 +44,29 @@ a:active {
 }
 
 nav {
-  display: grid;
-  grid-template-rows: 40vh;
+  height: auto;
   width: 100%;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  position: auto;
+  background: #ff8400;
+  justify-content: auto;
+  align-items: auto;
+  grid-template-rows: 40vh;
   z-index: 4;
-  background-color: #ff8400;
 }
 nav ul {
-  display: grid;
-  grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
   height: 40vh;
   width: 100%;
+  display: grid;
+  position: auto;
+  background: #ff8400;
   justify-content: center;
   align-items: center;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
   right: 0vw;
   top: 0vw;
   z-index: 4;
   list-style-type: none;
-  background-color: #ff8400;
 }
 nav ul li {
   margin-top: 0vw;
@@ -81,7 +110,7 @@ nav ul li {
 }
 
 /* footer icons styling */
-.linkedin-icon-link {
+.linkedin-icon-link, .mail-icon-link {
   position: fixed;
   bottom: 5vh;
   left: 2.4vw;
@@ -100,21 +129,12 @@ nav ul li {
 }
 
 .mail-icon-link {
-  z-index: 99999;
-  position: fixed;
   bottom: 12vh;
   left: 1.5vw;
   width: 9vw;
-  -webkit-animation-name: appear-footer;
-          animation-name: appear-footer;
   -webkit-animation-duration: 0.7s;
           animation-duration: 0.7s;
   transition: transform 0.3s;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  filter: invert(99%) sepia(3%) saturate(3%) hue-rotate(250deg) brightness(112%) contrast(71%);
 }
 
 .linkedin-icon-link:active, .mail-icon-link:active {
@@ -216,13 +236,36 @@ nav ul li {
   width: 80vw;
   text-align: center;
   margin-top: 1vw;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: italic;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   -webkit-animation-name: projectappear;
           animation-name: projectappear;
+}
+
+.inputs, #contact-cont, #contact__unique-section, #home__section-2__titles, #accesibility, #consistency, #optimization, #accesibility-background, #consistency-background, #optimization-background, #concern-div, #home__section1, #header, nav {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact__unique-section, #home__section2, #header {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
+  display: flex;
+}
+
+.skills__section1 {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
+  display: grid;
+}
+
+.text-skill, .project-text, #form-text, .subtitle-contact, #h1-subtitle, .text-paragraph {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
 }
 
 /* hidding the obligatory h1 */
@@ -231,13 +274,7 @@ nav ul li {
 }
 
 #header {
-  height: 100vh;
-  width: 100%;
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
 }
 
 /* header-title "Simon Fattobene" letters group */
@@ -366,28 +403,33 @@ nav ul li {
 }
 /* header-blocker.Coloured plane that blocks letters on header-title startup */
 #header__title-blocker {
-  display: flex;
-  position: relative;
-  top: 5vh;
-  left: 0vw;
-  background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
-  z-index: 2;
   height: 12vh;
   width: 100%;
+  display: flex;
+  position: relative;
+  background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
+  justify-content: auto;
+  align-items: auto;
+  top: 5vh;
+  left: 0vw;
+  z-index: 2;
 }
 
 /* header-subtitle styling */
 #h1-subtitle {
-  font-size: 4.7vh;
-  color: rgb(218, 218, 218);
+  height: auto;
   width: 80vw;
   display: flex;
+  position: relative;
+  background: auto;
   justify-content: flex-end;
+  align-items: auto;
+  font-size: 4.7vh;
+  color: rgb(218, 218, 218);
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  position: relative;
   bottom: 7vh;
   left: 6vw;
   z-index: 3;
@@ -396,9 +438,6 @@ nav ul li {
   -webkit-animation-duration: 2.5s;
           animation-duration: 2.5s;
   transition: transform 0.5s;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: italic;
 }
 
 @-webkit-keyframes subtitlefadein {
@@ -418,13 +457,41 @@ nav ul li {
     opacity: 1;
   }
 }
+.inputs, #contact-cont, #contact__unique-section, #home__section-2__titles, #accesibility, #consistency, #optimization, #accesibility-background, #consistency-background, #optimization-background, #concern-div, #home__section1, nav, #header {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact__unique-section, #home__section2, #header {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
+  display: flex;
+}
+
+.skills__section1 {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
+  display: grid;
+}
+
+.text-skill, .project-text, #form-text, .subtitle-contact, .text-paragraph, #h1-subtitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
 /* Section 1 "Main concerns" styling */
 #home__section1 {
   height: 100%;
   width: 100%;
   display: grid;
-  align-items: center;
-  justify-content: center;
+  position: auto;
+  background: auto;
+  justify-content: auto;
+  align-items: auto;
   grid-template-areas: "titles" "concerns" "space";
   grid-template-rows: 1fr 4fr;
   padding-bottom: 25vw;
@@ -445,8 +512,6 @@ nav ul li {
   grid-area: concerns;
   gap: 0vw;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 100%;
 }
 
@@ -496,39 +561,52 @@ nav ul li {
   padding: 3vh 0vw 3vh 0vw;
   width: 80vw;
   border-radius: 20px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
 }
 
 /* Home page concern boxes */
 #accesibility, #consistency, #optimization {
-  text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  justify-content: center;
-  align-items: center;
   position: relative;
   left: 10%;
   width: 80%;
 }
 
-/* Section 2 "About me" styling */
-#home__section2 {
+.inputs, #contact-cont, #contact__unique-section, #home__section-2__titles, nav, #header, #home__section1, #concern-div, #accesibility-background, #consistency-background, #optimization-background, #accesibility, #consistency, #optimization {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact__unique-section, #home__section2, #header {
   height: 100vh;
   width: 100%;
-  display: grid;
-  grid-template-rows: 1fr;
-  justify-content: center;
   background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
+  display: flex;
+}
+
+.skills__section1 {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
+  display: grid;
+}
+
+.text-skill, .project-text, #form-text, .subtitle-contact, .text-paragraph, #h1-subtitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Section 2 "About me" styling */
+#home__section2 {
+  justify-content: center;
 }
 
 #home__section-2__titles {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 /* About-me subtitle styling */
@@ -544,13 +622,42 @@ nav ul li {
   bottom: 0vh;
 }
 
+.inputs, #contact-cont, #contact__unique-section, nav, #header, #home__section1, #concern-div, #accesibility-background, #consistency-background, #optimization-background, #accesibility, #consistency, #optimization, #home__section-2__titles {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact__unique-section, #header, #home__section2 {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
+  display: flex;
+}
+
+.skills__section1 {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
+  display: grid;
+}
+
+.text-skill, .project-text, #form-text, .subtitle-contact, .text-paragraph, #h1-subtitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
 /* About page unique section configuring */
 .about__section1 {
   height: 100%;
+  width: auto;
+  display: flex;
+  position: auto;
   background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
-  display: grid;
-  grid-template-rows: 1fr;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #texta {
@@ -561,19 +668,30 @@ nav ul li {
   margin-top: 16vh;
 }
 
-#contact__unique-section {
+.inputs, #contact-cont, #contact__unique-section, nav, #header, #home__section1, #concern-div, #accesibility-background, #consistency-background, #optimization-background, #accesibility, #consistency, #optimization, #home__section-2__titles {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact__unique-section, #header, #home__section2 {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
+  display: flex;
+}
+
+.skills__section1 {
   height: 100vh;
   width: 100%;
   background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
   display: grid;
-  grid-template-rows: 1fr;
-  align-items: center;
-  justify-content: center;
 }
 
-#contact-cont {
-  align-items: center;
-  justify-content: center;
+.text-skill, .project-text, #form-text, .subtitle-contact, .text-paragraph, #h1-subtitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
 }
 
 #contact-title {
@@ -592,8 +710,6 @@ nav ul li {
 
 /* Contact page form input configuring */
 .inputs {
-  align-items: center;
-  justify-content: center;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 1fr 1fr 2.9fr;
@@ -641,17 +757,11 @@ nav ul li {
   width: 80vw;
   text-align: center;
   margin-bottom: 0.8vw;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: italic;
 }
 
 #form-text {
   color: rgb(113, 113, 113);
   font-size: 2.5vh;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: italic;
   margin-top: 2vw;
   width: 50vw;
 }
@@ -670,26 +780,64 @@ nav ul li {
   border-radius: 10px;
 }
 
+nav, #header, #home__section1, #concern-div, #accesibility-background, #consistency-background, #optimization-background, #accesibility, #consistency, #optimization, #home__section-2__titles, #contact__unique-section, #contact-cont, .inputs {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#header, #home__section2, #contact__unique-section {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
+  display: flex;
+}
+
+.skills__section1 {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
+  display: grid;
+}
+
+.text-skill, .project-text, .text-paragraph, #h1-subtitle, .subtitle-contact, #form-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
 /* Projects page section configuring */
 #projects__unique-section {
   height: 100%;
+  width: auto;
+  display: flex;
+  position: auto;
   background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
-  display: grid;
-  grid-template-rows: 1fr;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
+  display: flex;
+  flex-direction: column;
   padding-top: 10vh;
+}
+
+#projects-text {
+  width: 80vw;
 }
 
 /* Projects page configuring */
 .img-container {
-  margin-top: 1vw;
-  width: 80vw;
   height: 100%;
+  width: 80vw;
   display: grid;
+  position: auto;
+  background: auto;
+  justify-content: auto;
+  align-items: center;
+  margin-top: 1vw;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "project-bbig" "project-cocinarte";
-  align-items: center;
   gap: 6vh;
 }
 
@@ -708,12 +856,15 @@ nav ul li {
 }
 
 .cont {
-  background-color: rgb(13, 13, 13);
-  border-radius: 7vw;
+  height: auto;
   width: 80vw;
   display: flex;
-  flex-direction: column;
+  position: auto;
+  background: rgb(13, 13, 13);
+  justify-content: auto;
   align-items: center;
+  border-radius: 7vw;
+  flex-direction: column;
   margin-top: 10vw;
 }
 
@@ -732,9 +883,6 @@ nav ul li {
   text-align: center;
   position: relative;
   top: -11vw;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: italic;
   -webkit-animation-name: projectappear;
           animation-name: projectappear;
   -webkit-animation-duration: 2s;
@@ -766,12 +914,34 @@ nav ul li {
   color: #ff8400;
 }
 
-/* Skill page section 1 styling */
+nav, #header, #home__section1, #concern-div, #accesibility-background, #consistency-background, #optimization-background, #accesibility, #consistency, #optimization, #home__section-2__titles, #contact__unique-section, #contact-cont, .inputs {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#header, #home__section2, #contact__unique-section {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
+  display: flex;
+}
+
 .skills__section1 {
   height: 100vh;
   width: 100%;
   background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
   display: grid;
+}
+
+.text-skill, .text-paragraph, #h1-subtitle, .subtitle-contact, #form-text, .project-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Skill page section 1 styling */
+.skills__section1 {
   grid-template-rows: 3fr 6fr 1fr;
   grid-template-areas: "titles" "skills" "nada";
   justify-content: center;
@@ -799,7 +969,7 @@ nav ul li {
   border-radius: 10px;
 }
 
-#skill1 {
+#skill1, #skill4, #skill3, #skill2 {
   width: 80%;
   height: 7px;
   background-color: #ff8400;
@@ -834,14 +1004,8 @@ nav ul li {
 }
 #skill2 {
   width: 45%;
-  height: 7px;
-  background-color: #ff8400;
-  z-index: 999999;
   -webkit-animation-name: skill2;
           animation-name: skill2;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  border-radius: 10px;
 }
 
 @-webkit-keyframes skill2 {
@@ -867,14 +1031,8 @@ nav ul li {
 }
 #skill3 {
   width: 20%;
-  height: 7px;
-  background-color: #ff8400;
-  z-index: 999999;
   -webkit-animation-name: skill3;
           animation-name: skill3;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  border-radius: 10px;
 }
 
 @-webkit-keyframes skill3 {
@@ -900,14 +1058,8 @@ nav ul li {
 }
 #skill4 {
   width: 55%;
-  height: 7px;
-  background-color: #ff8400;
-  z-index: 999999;
   -webkit-animation-name: skill4;
           animation-name: skill4;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  border-radius: 10px;
 }
 
 @-webkit-keyframes skill4 {
@@ -935,9 +1087,6 @@ nav ul li {
   color: rgb(218, 218, 218);
   font-size: 3.5vh;
   width: 80vw;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: italic;
   position: relative;
   top: 2vh;
 }
@@ -1040,7 +1189,7 @@ nav ul li {
             animation-duration: 1.375s;
   }
   /* footer icons styling */
-  .linkedin-icon-link {
+  .linkedin-icon-link, .mail-icon-link {
     width: 5vw;
   }
   .mail-icon-link {
@@ -1181,6 +1330,9 @@ nav ul li {
   .img-project {
     width: 25vw;
   }
+  #projects-text {
+    width: 70vw;
+  }
   .cont {
     width: 70vw;
     height: 100%;
@@ -1209,6 +1361,28 @@ nav ul li {
 /* TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET */
 /* DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP */
 @media screen and (min-width: 1024px) and (orientation: landscape) {
+  nav, #header, #home__section1, #concern-div, #accesibility-background, #consistency-background, #optimization-background, #accesibility, #consistency, #optimization, #home__section-2__titles, #contact__unique-section, #contact-cont, .inputs {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  #header, #home__section2, #contact__unique-section {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
+    display: flex;
+  }
+  .skills__section1 {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
+    display: grid;
+  }
+  .text-paragraph, #h1-subtitle, .subtitle-contact, #form-text, .project-text, .text-skill {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
   ::-webkit-scrollbar {
     -webkit-appearance: none;
   }
@@ -1252,7 +1426,7 @@ nav ul li {
     transform: translate(0vw, 1vw);
   }
   /* footer icons styling */
-  .linkedin-icon-link {
+  .linkedin-icon-link, .mail-icon-link {
     width: 3.3vw;
   }
   .mail-icon-link {
@@ -1274,6 +1448,28 @@ nav ul li {
   .text-paragraph {
     font-size: 2vw;
     width: 65vw;
+  }
+  nav, #header, #home__section1, #concern-div, #accesibility-background, #consistency-background, #optimization-background, #accesibility, #consistency, #optimization, #home__section-2__titles, #contact__unique-section, #contact-cont, .inputs {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  #header, #home__section2, #contact__unique-section {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
+    display: flex;
+  }
+  .skills__section1 {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
+    display: grid;
+  }
+  .text-paragraph, #h1-subtitle, .subtitle-contact, #form-text, .project-text, .text-skill {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
   }
   /* header-title "Simon Fattobene" letters group */
   #header__h1-group {
@@ -1317,6 +1513,28 @@ nav ul li {
     width: 58vw;
     bottom: 2.6vw;
   }
+  nav, #header, #home__section1, #concern-div, #accesibility-background, #consistency-background, #optimization-background, #accesibility, #consistency, #optimization, #home__section-2__titles, #contact__unique-section, #contact-cont, .inputs {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  #header, #home__section2, #contact__unique-section {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
+    display: flex;
+  }
+  .skills__section1 {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
+    display: grid;
+  }
+  .text-paragraph, #h1-subtitle, .subtitle-contact, #form-text, .project-text, .text-skill {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
   #home__section1 {
     grid-template-rows: 1fr 1fr 2fr;
   }
@@ -1330,9 +1548,75 @@ nav ul li {
   .concern-text {
     font-size: 1.5vw;
   }
+  nav, #header, #home__section1, #concern-div, #accesibility-background, #consistency-background, #optimization-background, #accesibility, #consistency, #optimization, #home__section-2__titles, #contact__unique-section, #contact-cont, .inputs {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  #header, #home__section2, #contact__unique-section {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
+    display: flex;
+  }
+  .skills__section1 {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
+    display: grid;
+  }
+  .text-paragraph, #h1-subtitle, .subtitle-contact, #form-text, .project-text, .text-skill {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
   /* About-me subtitle styling */
   .subtitle2 {
     font-size: 5vw;
+  }
+  nav, #header, #home__section1, #concern-div, #accesibility-background, #consistency-background, #optimization-background, #accesibility, #consistency, #optimization, #home__section-2__titles, #contact__unique-section, #contact-cont, .inputs {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  #header, #home__section2, #contact__unique-section {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
+    display: flex;
+  }
+  .skills__section1 {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
+    display: grid;
+  }
+  .text-paragraph, #h1-subtitle, .subtitle-contact, #form-text, .project-text, .text-skill {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  nav, #header, #home__section1, #concern-div, #accesibility-background, #consistency-background, #optimization-background, #accesibility, #consistency, #optimization, #home__section-2__titles, #contact__unique-section, #contact-cont, .inputs {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  #header, #home__section2, #contact__unique-section {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
+    display: flex;
+  }
+  .skills__section1 {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
+    display: grid;
+  }
+  .text-paragraph, #h1-subtitle, .subtitle-contact, #form-text, .project-text, .text-skill {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
   }
   .btn:hover {
     background: linear-gradient(to right, #ff8400 0%, #ffffff 50%, #ff8400 100%);
@@ -1353,6 +1637,28 @@ nav ul li {
       background-position: 200%;
     }
   }
+  nav, #header, #home__section1, #concern-div, #accesibility-background, #consistency-background, #optimization-background, #accesibility, #consistency, #optimization, #home__section-2__titles, #contact__unique-section, #contact-cont, .inputs {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  #header, #home__section2, #contact__unique-section {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
+    display: flex;
+  }
+  .skills__section1 {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
+    display: grid;
+  }
+  .text-paragraph, #h1-subtitle, .subtitle-contact, #form-text, .project-text, .text-skill {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
   /* Projects page configuring */
   .img-container {
     width: 65vw;
@@ -1361,6 +1667,9 @@ nav ul li {
   .img-project {
     width: 17vw;
     margin-top: 5vw;
+  }
+  #projects-text {
+    width: 65vw;
   }
   .cont {
     width: 65vw;
@@ -1379,6 +1688,28 @@ nav ul li {
     background-size: 200% auto;
     -webkit-animation: textShine 1s ease-in-out infinite alternate;
             animation: textShine 1s ease-in-out infinite alternate;
+  }
+  nav, #header, #home__section1, #concern-div, #accesibility-background, #consistency-background, #optimization-background, #accesibility, #consistency, #optimization, #home__section-2__titles, #contact__unique-section, #contact-cont, .inputs {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  #header, #home__section2, #contact__unique-section {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
+    display: flex;
+  }
+  .skills__section1 {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to left, rgb(16, 16, 16), rgb(23, 23, 23), rgb(23, 23, 23), rgb(16, 16, 16));
+    display: grid;
+  }
+  .text-paragraph, #h1-subtitle, .subtitle-contact, #form-text, .project-text, .text-skill {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
   }
   .text-skill {
     width: 65vw;

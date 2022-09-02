@@ -1,4 +1,7 @@
 @import "../../colors";
+@import "../../extends";
+@import "../../mixins";
+@import "../../maps";
   
   /* Projects page configuring */
   .img-container{
@@ -9,6 +12,10 @@
   .img-project{
     width: 17vw;
     margin-top: 5vw;
+  }
+
+  #projects-text{
+    width: 65vw;
   }
   
   .cont{

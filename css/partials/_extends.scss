@@ -4,9 +4,18 @@
     align-items: center;
 }
 
-%hw100{
-    height: 100%;
+%flexHB100{
+    height: 100vh;
     width: 100%;
+    background: $backgroundGradient;
+    display: flex;
+}
+
+%gridHB100{
+    height: 100vh;
+    width: 100%;
+    background: $backgroundGradient;
+    display: grid;
 }
 
 %roboto500i{

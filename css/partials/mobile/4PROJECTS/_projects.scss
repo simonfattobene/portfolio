@@ -1,29 +1,30 @@
 @import "../../colors";
 @import "../../extends";
-
+@import "../../mixins";
+@import "../../maps";
 
 /* Projects page section configuring */
   #projects__unique-section{
+    @include heightWDP(100%, auto, flex, auto, $backgroundGradient, center, center);
     height: 100%;
     background: $backgroundGradient;
-    display: grid;
-    grid-template-rows: 1fr;
-    align-items: center;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     padding-top: 10vh;
+  }
+
+  #projects-text{
+    width: 80vw;
   }
   
   /* Projects page configuring */
   .img-container{
+    @include heightWDP(100%, 80vw, grid, auto, auto, auto, center);
     margin-top: 1vw;
-    width: 80vw;
-    height: 100%;
-    display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
     "project-bbig"
     "project-cocinarte";
-    align-items: center;
     gap: 6vh;
   }
   
@@ -40,12 +41,9 @@
   }
   
   .cont{
-    background-color: $darkestColor;
+    @include heightWDP(auto, 80vw, flex, auto, $darkestColor, auto, center);
     border-radius: 7vw;
-    width: 80vw;
-    display: flex;
     flex-direction: column;
-    align-items: center;
     margin-top: 10vw;
   }
   

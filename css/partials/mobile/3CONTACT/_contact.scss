@@ -1,16 +1,14 @@
 @import "../../colors";
 @import "../../extends";
+@import "../../mixins";
+@import "../../maps";
 
 #contact__unique-section{
-    @extend %hw100;
-    background: $backgroundGradient;
-    display: grid;
-    grid-template-rows: 1fr;
+    @extend %flexHB100;
     @extend %center;
   }
   #contact-cont{
-    align-items: center;
-    justify-content: center;
+    @extend %center;
   }
   #contact-title{
     margin-top: 0vh;
@@ -65,7 +63,7 @@
   .buttons{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: map-get($mapEstilo, align-center);
     justify-content: space-between;
     grid-column: span 2;
   }

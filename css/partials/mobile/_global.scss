@@ -1,5 +1,7 @@
 @import "../colors";
-@import "../../extends";
+@import "../extends";
+@import "../mixins";
+@import "../maps";
 
 // _________NAV_________
 a:link, a:visited{
@@ -11,25 +13,17 @@ a:link, a:visited{
 }
 
 nav{
-  display: grid;
+  @include heightWDP(auto, 100%, grid, auto, $accentColor, auto, auto);
   grid-template-rows: 40vh;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
+  @extend %center;
   z-index: 4;
-  background-color: $accentColor;
   ul{
-    display: grid;
+    @include heightWDP(40vh, 100%, grid, auto, $accentColor, center, center);
     grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
-    height: 40vh;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
     right: 0vw;
     top: 0vw;
     z-index: 4;
     list-style-type: none;
-    background-color: $accentColor;
     li{
       margin-top: 0vw;
       text-align: center;
@@ -71,16 +65,12 @@ nav{
   user-select: none;
   filter: $blackToBrightColor1;
 }.mail-icon-link{
-  z-index: 99999;
-  position: fixed;
+  @extend .linkedin-icon-link;
   bottom: 12vh;
   left: 1.5vw;
   width: 9vw;
-  animation-name: appear-footer;
   animation-duration: 0.7s;
   transition: transform 0.3s;
-  user-select: none;
-  filter: $blackToBrightColor1;
 }
 .linkedin-icon-link:active, .mail-icon-link:active{
   transform: rotate(-15deg);

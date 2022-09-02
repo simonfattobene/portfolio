@@ -1,6 +1,11 @@
-@import "colors";
+@import "./colors";
 
-@mixin flexGradient($backgroundGradient, $display:flex) {
-  background: $backgroundGradient;
+@mixin heightWDP($height, $width, $display, $position, $background, $justify-content, $align-items) {
+  height: $height;
+  width: $width;
   display: $display;
+  position: $position;
+  background: $background;
+  justify-content: $justify-content;
+  align-items: $align-items;
 }

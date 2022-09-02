@@ -1,11 +1,11 @@
 @import "../../colors";
 @import "../../extends";
 @import "../../mixins";
+@import "../../maps";
 
 /* Section 1 "Main concerns" styling */
   #home__section1{
-    @extend %hw100;
-    display: grid;
+    @include heightWDP(100%, 100%, grid, auto, auto, auto, auto);
     @extend %center;
     grid-template-areas:
       "titles"
@@ -80,10 +80,10 @@
   
   /* Home page concern boxes */
   #accesibility, #consistency, #optimization{
-    @extend %center;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    @extend %center;
     position: relative;
     left: 10%;
     width: 80%;

@@ -1,12 +1,12 @@
 @import "../../colors";
 @import "../../extends";
 @import "../../mixins";
+@import "../../maps";
 
 /* About page unique section configuring */
   .about__section1{
-    @extend %hw100;
-    @include flexGradient;
-    justify-content: center;
+    @include heightWDP(100%, auto, flex, auto, $backgroundGradient, center, center);
+    flex-direction: column;
   }
   
   #texta{

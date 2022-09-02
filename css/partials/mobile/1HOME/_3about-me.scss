@@ -1,12 +1,12 @@
 @import "../../colors";
 @import "../../extends";
+@import "../../mixins";
+@import "../../maps";
 
 /* Section 2 "About me" styling */
   #home__section2{
-    @extend %hw100;
-    display: flex;
-    justify-content: center;
-    background: $backgroundGradient;
+    @extend %flexHB100;
+    justify-content: map-get($mapEstilo, just-center);
   }
   
   #home__section-2__titles{

@@ -1,7 +1,7 @@
 @import "../../colors";
 @import "../../extends";
 @import "../../mixins";
-@import"../../maps";
+@import "../../maps";
 
 /* hidding the obligatory h1 */
 #home-title{
@@ -9,20 +9,19 @@
 }
 
 #header{
-  @include flexGradient;
-  @extend %hw100;
-  @extend %center;
+  @extend %flexHB100;
   flex-direction: column;
+  @extend %center;
 }
   
 /* header-title "Simon Fattobene" letters group */
 #header__h1-group{
-  display: map-get($mapEstilo, display);
+  display: flex;
   font-size: 12vw;
   font-family: 'Roboto', sans-serif;
   color: $accentColor;
-  display: map-get($mapEstilo, user-select);
-  display: map-get($mapEstilo, position);
+  user-select: none;
+  position: relative;
   top: 0vw;
 }
   
@@ -81,24 +80,18 @@ text-shadow: 0vw 0vw 0.5vw $h1ActiveTextShadow;
   
 /* header-blocker.Coloured plane that blocks letters on header-title startup */
 #header__title-blocker{
-  @include flexGradient;
-  position: relative;
+  @include heightWDP(12vh, 100%, flex, relative, $backgroundGradient, auto, auto);
   top: 5vh;
   left: 0vw;
   z-index: 2;
-  height: 12vh;
-  width: 100%;
 }
   
 /* header-subtitle styling */
 #h1-subtitle{
+  @include heightWDP(auto, 80vw, flex, relative, auto, flex-end, auto);
   font-size: 4.7vh;
   color: $brightColor1;
-  width: 80vw;
-  display: map-get($mapEstilo, display);
-  justify-content: flex-end;
-  display: map-get($mapEstilo, user-select);
-  display: map-get($mapEstilo, position);
+  user-select: none;
   bottom: 7vh;
   left: 6vw;
   z-index: 3;
