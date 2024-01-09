@@ -57,7 +57,7 @@
   
   #skill2{
     @extend #skill1;
-    width: 45%;
+    width: 35%;
     animation-name: skill2;
   }@keyframes skill2 {
     from {
@@ -66,13 +66,13 @@
     }
     to {
       background-color: $accentColor;
-      width: 45%;
+      width: 35%;
     }
   }
   
   #skill3{
     @extend #skill1;
-    width: 20%;
+    width: 15%;
     animation-name: skill3;
   }@keyframes skill3 {
     from {
@@ -81,7 +81,7 @@
     }
     to {
       background-color: $accentColor;
-      width: 20%;
+      width: 15%;
     }
   }
   
