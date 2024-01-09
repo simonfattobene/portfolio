@@ -1005,7 +1005,7 @@ nav, #header, #home__section1, #concern-div, #accesibility-background, #consiste
   }
 }
 #skill2 {
-  width: 45%;
+  width: 35%;
   -webkit-animation-name: skill2;
           animation-name: skill2;
 }
@@ -1017,7 +1017,7 @@ nav, #header, #home__section1, #concern-div, #accesibility-background, #consiste
   }
   to {
     background-color: #ff8400;
-    width: 40%;
+    width: 35%;
   }
 }
 
@@ -1028,11 +1028,11 @@ nav, #header, #home__section1, #concern-div, #accesibility-background, #consiste
   }
   to {
     background-color: #ff8400;
-    width: 40%;
+    width: 35%;
   }
 }
 #skill3 {
-  width: 20%;
+  width: 15%;
   -webkit-animation-name: skill3;
           animation-name: skill3;
 }
